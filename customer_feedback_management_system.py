@@ -39,7 +39,8 @@ print(df.info())
 df['Rating'] = df['Rating'].astype(int)  # Ensuring the 'Rating' column is of integer type
 total_ratings = df['Rating'].sum()
 average_rating = df['Rating'].mean()
-# average_rating = total_ratings / len(df)
+
+# Displaying the total and average ratings
 print(f"Total Ratings: {total_ratings}")
 print(f"Average Rating: {average_rating:.2f}") # Displaying the average rating formatted to 2 decimal places using :.2f
 
